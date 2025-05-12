@@ -4,8 +4,17 @@ Bài tập cá nhân môn Trí Tuệ Nhân Tạo
 Áp dụng các thuật toán tìm kiếm khác nhau để giải quyết bài toán 8-Puzzle 
 ## 2. Nội dung:
 ### 2.1. Nhóm 1: Thuật toán không có thông tin (Uninformed Search)
-- Breadth-First Search (BFS) – Tìm kiếm theo chiều rộng
-- Depth-First Search (DFS) – Tìm kiếm theo chiều sâu
+#### Breadth-First Search (BFS) – Tìm kiếm theo chiều rộng
+Khái Niệm: Breadth-First Search là thuật toán tìm kiếm theo chiều rộng mở rộng các nút theo thứ tự tạo
+(FIFO). BFS là thuật toán tìm kiếm mù: không sử dụng thông tin ngoại trừ của
+không gian trạng thái và là thuật toán tối ưu nếu tất cả các hành động có cùng chi phí. Gồm 2 biến thể:
+- BFS-Tree: Tìm kiếm theo chiều rộng có thể được thực hiện mà không cần
+loại bỏ trùng lặp (như tìm kiếm cây)
+- BFS-Graph: Tìm kiếm theo chiều rộng có loại bỏ trùng lặp (như tìm kiếm đồ thị)
+
+
+
+#### Depth-First Search (DFS) – Tìm kiếm theo chiều sâu
 - Uniform Cost Search (UCS) – Tìm kiếm theo chi phí thống nhất
 - Iterative Deepening DFS (IDS) – Tìm kiếm chiều sâu lặp
 
