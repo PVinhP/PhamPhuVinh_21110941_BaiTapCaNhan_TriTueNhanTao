@@ -64,6 +64,7 @@ UCS: Tìm được lời giải tối ưu, thích hợp cho bài toán có chi p
 #### Iterative Deepening DFS (IDS) – Tìm kiếm chiều sâu lặp
 
 IDS là sự kết hợp giữa DFS và BFS. Thuật toán thực hiện DFS giới hạn độ sâu, sau đó tăng dần giới hạn này. IDS có ưu điểm là đảm bảo tìm được lời giải tối ưu giống BFS, nhưng sử dụng ít bộ nhớ như DFS. Đây là một lựa chọn tốt cho bài toán với không gian tìm kiếm lớn.
+
 https://github.com/user-attachments/assets/ef7222f1-4f82-4de2-a28c-f8be587a6eb3
 
 
@@ -124,7 +125,11 @@ Simulated Annealing là thuật toán cục bộ cho phép chọn trạng thái 
 
 
 
-Uploading SimulatedAnnealing.mp4…
+
+
+https://github.com/user-attachments/assets/d457518e-f22b-4353-9f7c-857e44fbe2b2
+
+
 
 
 
