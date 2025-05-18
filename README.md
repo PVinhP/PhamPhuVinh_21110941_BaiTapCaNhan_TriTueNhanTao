@@ -90,26 +90,45 @@ https://github.com/user-attachments/assets/f4d5a574-8a56-43ae-9ead-9789cdbdec60
 IDA*: Kết hợp giữa A* và IDS, tiết kiệm bộ nhớ, nhưng thời gian có thể lớn hơn A*.
 
 ### 2.3. Nhóm 3: Tìm kiếm cục bộ (Local Search)
-- Hill Climbing
-  - Simple Hill Climbing
-  - Steepest-Ascent Hill Climbing
-  - Stochastic Hill Climbing
-- Simulated Annealing – Ủ mô phỏng
-- Genetic Algorithms – Thuật toán di truyền
-- Beam Search – Tìm kiếm chùm tia
+### Hill Climbing
+Thuật toán leo đồi (Hill Climbing) là thuật toán tìm kiếm thuộc nhóm tìm kiếm cục bộ (local search) lấy cảm hứng từ việc leo lên đỉnh núi. Trong đó, mục tiêu là tìm ra giải pháp tốt nhất từ ​​một tập hợp các giải pháp khả thi nên thường được sử dụng để giải các bài toán tối ưu hóa. Thuật toán hoạt động bằng cách bắt đầu từ một trạng thái ban đầu và liên tục di chuyển đến trạng thái lân cận tốt hơn (theo một hàm đánh giá) cho đến khi không còn trạng thái lân cận nào tốt hơn hoặc đạt được mục tiêu.
+#### Simple Hill Climbing
+Simple hill Climbing (Leo đồi đơn giản) là cách đơn giản nhất để triển khai thuật toán leo đồi , thuật toán chỉ kiểm tra từng trạng thái lận cận của nó và nếu nó tìm thấy trạng thái tốt hơn trạng thái hiện tại thì di chuyển.
 
+#### Steepest-Ascent Hill Climbing
+Steepest-Ascent hill climbing (Leo đồi dốc nhất) Là một biến thể của thuật toán leo đồi đơn giản. Thuật toán này kiểm tra tất cả các nút lân cận của trạng thái hiện tại và chọn một nút lân cận gần nhất với trạng thái mục tiêu.
+
+#### Stochastic Hill Climbing
+Stochastic hill Climbing (Leo đồi ngẫu nhiên) Là một biến thể của thuật toán leo đồi đơn giản. Thay vì tìm ra hàng xóm tốt nhất, phiên bản này lựa chọn ngẫu nhiên một hàng xóm. Nếu hàng xóm đó tốt hơn trạng thái hiện thời, hàng xóm đó sẽ được chọn làm trạng thái hiện thời và thuật toán lặp lại. Ngược lại, nếu hàng xóm được chọn không tốt hơn, thuật toán sẽ chọn ngẫu nhiên một hàng xóm khác và so sánh. Thuật toán kết thúc và trả lại trạng thái hiện thời khi đã hết “kiên nhẫn”. 
+#### Simulated Annealing 
+Simulated Annealing là thuật toán cục bộ cho phép chọn trạng thái "xấu hơn" với một xác suất giảm dần theo thời gian. Cách làm này giúp thoát khỏi cực trị cục bộ và tăng khả năng tìm được lời giải tốt hơn về lâu dài.
+#### Genetic Algorithms – Thuật toán di truyền
+Thuật toán di truyền (Genetic Algorithm - GA) là một phương pháp tìm kiếm theo cơ chế tự nhiên của quá trình tiến hóa, bao gồm các bước chọn lọc, lai ghép và đột biến để tìm ra lời giải tối ưu. Trong trò chơi đua cá, thuật toán này có thể dùng để tìm ra chiến lược tối ưu cho việc di chuyển, dựa trên các cá thể khác nhau và cải thiện qua các thế hệ.
+
+#### Beam Search 
+Beam Search là một dạng tìm kiếm có giới hạn, chỉ giữ lại k trạng thái tốt nhất tại mỗi bước mở rộng. Nó tiết kiệm bộ nhớ và thời gian nhưng có thể bỏ lỡ lời giải tối ưu nếu k quá nhỏ.
 ### 2.4. Nhóm 4: Tìm kiếm trong môi trường phức tạp
-- Tree Search AND–OR
-- Partially Observable Search – Quan sát một phần
-- Unknown or Dynamic Environment – Môi trường động hoặc không biết trước
+#### Tree Search AND–OR
+AND-OR Search là một thuật toán tìm kiếm trong không gian trạng thái phức tạp, nơi các hành động cần phải kết hợp với nhau để đạt được mục tiêu. Thuật toán này phân chia bài toán thành các nhánh AND (cần thỏa mãn tất cả các điều kiện) và OR (chỉ cần thỏa mãn một trong các điều kiện). Đây là một phương pháp phù hợp cho những bài toán có sự phụ thuộc lẫn nhau giữa các hành động.
+
+#### Partially Observable Search – Quan sát một phần
+Tìm kiếm trong môi trường mà chỉ thấy được một phần, không phải lúc nào cũng biết chính xác trạng thái hiện tại. Cần dùng tập hợp các trạng thái có thể xảy ra (belief states) và cập nhật dần theo quan sát. Ở thuật toán này, phần không nhìn thấy được đánh dấu là -1.
+
+####  Searching with No Observation – Tìm kiếm không quan sát
+Tìm kiếm không quan sát (Searching with No Observation) là một dạng tìm kiếm trong môi trường hoàn toàn không có khả năng quan sát trạng thái hiện tại hoặc kết quả của hành động. Agent (tác nhân) phải đưa ra kế hoạch hành động dựa vào kiến thức ban đầu mà không có bất kỳ thông tin cập nhật nào trong suốt quá trình thực hiện.
 
 ### 2.5. Nhóm 5: Tìm kiếm có ràng buộc (Constraint Satisfaction)
-- Backtracking Search
-- Forward Checking
-- AC-3 – Thuật toán kiểm tra tính nhất quán
+#### Backtracking Search
+Backtracking là thuật toán tìm kiếm trong môi trường có ràng buộc, phương pháp tìm kiếm dựa trên việc thử và sai (trial-and-error). Khi gặp một ngõ cụt (Không thỏa các ràng buộc), thuật toán sẽ quay lại bước trước đó để thử lựa chọn khác. Backtracking được sử dụng chủ yếu trong các bài toán tổ hợp và tối ưu.
+
+#### Test-Based Search- Kiểm thử
+Kiểm thử là thuật toán tìm kiếm có ràng buộc (Constraint Satisfaction). Thuật toán hoạt động bằng cách tạo ra toàn bộ các tổ hợp giá trị có thể cho các biến, sau đó kiểm tra từng tổ hợp để xem có thoả mãn tất cả ràng buộc không.
+#### AC-3 
+AC-3 là một thuật toán trong nhóm tìm kiếm có ràng buộc (Constraint Satisfaction) dùng để kiểm tra và duy trì tính nhất quán cung (arc-consistency) giữa các biến có ràng buộc nhị phân. Thuật toán này hoạt động bằng cách lặp lại việc loại bỏ các giá trị không hợp lệ khỏi miền giá trị của các biến, cho đến khi không còn thay đổi nào nữa.
 
 ### 2.6. Nhóm 6: Học tăng cường (Reinforcement Learning)
-- Q-Learning
+#### Q-Learning
+Q-Learning là một thuật toán học máy thuộc nhánh học tăng cường (reinforcement learning), trong đó một tác nhân học cách tối ưu hóa hành động của mình thông qua việc nhận phản hồi (thưởng hoặc phạt) từ môi trường. 
 
 # 3. Kết luận
 Qua việc áp dụng các thuật toán tìm kiếm vào bài toán 8-Puzzle, em rút ra được một số kết luận như sau:
