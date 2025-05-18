@@ -41,6 +41,10 @@ Thuật toán BFS tìm được lời giải tối ưu nếu chi phí đồng đ
 Tìm kiếm theo chiều sâu (DFS) mở rộng các nút theo thứ tự nút sâu nhất mở rộng trước (LIFO). danh sách mở được triển khai dưới dạng ngăn xếp.
 
 
+
+Uploading DFS.mp4…
+
+
 #### Uniform Cost Search (UCS) – Tìm kiếm theo chi phí thống nhất
 UCS là một thuật toán tìm kiếm không có thông tin (Uninformed search algorithms) dựa trên chi phí. Thuật toán sẽ tìm đường đi ngắn nhất giữa hai điểm bằng cách mở rộng các trạng thái theo chi phí thấp nhất. UCS luôn ưu tiên các con đường có chi phí thấp nhất để đạt được đích, giúp đảm bảo rằng tìm được con đường tối ưu nhất trong các môi trường có chi phí thay đổi.
 
@@ -85,7 +89,7 @@ Thuật toán IDS Kết hợp ưu điểm của BFS và DFS, đảm bảo tìm l
 ### 2.6. Nhóm 6: Học tăng cường (Reinforcement Learning)
 - Q-Learning
 
-# Kết luận
+# 3. Kết luận
 Qua việc áp dụng các thuật toán tìm kiếm vào bài toán 8-Puzzle, em rút ra được một số kết luận như sau:
 
 Không có thuật toán nào là tốt nhất trong mọi trường hợp. Mỗi thuật toán có ưu và nhược điểm riêng.
