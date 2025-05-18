@@ -121,7 +121,7 @@ Simulated Annealing là thuật toán cục bộ cho phép chọn trạng thái 
 https://github.com/user-attachments/assets/bfe61243-5167-48ea-b391-3438abab482a
 
 
-Simulated Annealing: Cho phép chấp nhận bước tồi với xác suất giảm dần theo thời gian. Hiệu quả trong việc tránh đỉnh cục bộ, nhưng cần điều chỉnh tham số nhiệt độ hợp lý.
+Simulated Annealing: Cho phép chấp nhận trạng thái xấu hơn với xác suất giảm dần theo thời gian. Hiệu quả trong việc tránh đỉnh cục bộ, nhưng cần điều chỉnh tham số nhiệt độ hợp lý.
 #### Genetic Algorithms – Thuật toán di truyền
 Thuật toán di truyền (Genetic Algorithm - GA) là một phương pháp tìm kiếm theo cơ chế tự nhiên của quá trình tiến hóa, bao gồm các bước chọn lọc, lai ghép và đột biến để tìm ra lời giải tối ưu. Trong trò chơi đua cá, thuật toán này có thể dùng để tìm ra chiến lược tối ưu cho việc di chuyển, dựa trên các cá thể khác nhau và cải thiện qua các thế hệ.
 
