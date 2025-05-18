@@ -43,7 +43,9 @@ Tìm kiếm theo chiều sâu (DFS) mở rộng các nút theo thứ tự nút s
 
 
 
-https://github.com/user-attachments/assets/91c4862d-c667-40fb-ae2b-b2ba95725bc6
+
+https://github.com/user-attachments/assets/cabfaa8d-30b3-4d63-81a0-5c704fd08fa4
+
 
 
 
