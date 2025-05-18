@@ -123,7 +123,10 @@ Stochastic Hill Climbing: Chọn ngẫu nhiên một bước cải thiện trong
 Simulated Annealing là thuật toán cục bộ cho phép chọn trạng thái "xấu hơn" với một xác suất giảm dần theo thời gian. Cách làm này giúp thoát khỏi cực trị cục bộ và tăng khả năng tìm được lời giải tốt hơn về lâu dài.
 
 
-https://github.com/user-attachments/assets/bfe61243-5167-48ea-b391-3438abab482a
+
+Uploading SimulatedAnnealing.mp4…
+
+
 
 
 Simulated Annealing: Cho phép chấp nhận trạng thái xấu hơn với xác suất giảm dần theo thời gian. Hiệu quả trong việc tránh đỉnh cục bộ, nhưng cần điều chỉnh tham số nhiệt độ hợp lý.
@@ -151,6 +154,10 @@ https://github.com/user-attachments/assets/d408e455-1098-4c27-a325-a093e1865d96
 #### Partially Observable Search – Quan sát một phần
 Tìm kiếm trong môi trường mà chỉ thấy được một phần, không phải lúc nào cũng biết chính xác trạng thái hiện tại. Cần dùng tập hợp các trạng thái có thể xảy ra (belief states) và cập nhật dần theo quan sát. Ở thuật toán này, phần không nhìn thấy được đánh dấu là -1.
 
+
+https://github.com/user-attachments/assets/4bdbac2e-8222-4553-acc4-a9b25e9b3f92
+
+
 ####  Searching with No Observation – Tìm kiếm không quan sát
 Tìm kiếm không quan sát (Searching with No Observation) là một dạng tìm kiếm trong môi trường hoàn toàn không có khả năng quan sát trạng thái hiện tại hoặc kết quả của hành động. Agent (tác nhân) phải đưa ra kế hoạch hành động dựa vào kiến thức ban đầu mà không có bất kỳ thông tin cập nhật nào trong suốt quá trình thực hiện.
 
@@ -170,6 +177,9 @@ AC-3 là một thuật toán trong nhóm tìm kiếm có ràng buộc (Constrain
 ### 2.6. Nhóm 6: Học tăng cường (Reinforcement Learning)
 #### Q-Learning
 Q-Learning là một thuật toán học máy thuộc nhánh học tăng cường (reinforcement learning), trong đó một tác nhân học cách tối ưu hóa hành động của mình thông qua việc nhận phản hồi (thưởng hoặc phạt) từ môi trường. 
+
+
+
 
 # 3. Kết luận
 Qua việc áp dụng các thuật toán tìm kiếm vào bài toán 8-Puzzle, em rút ra được một số kết luận như sau:
