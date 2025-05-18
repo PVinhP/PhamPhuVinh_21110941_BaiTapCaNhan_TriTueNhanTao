@@ -92,21 +92,44 @@ IDA*: Kết hợp giữa A* và IDS, tiết kiệm bộ nhớ, nhưng thời gia
 ### 2.3. Nhóm 3: Tìm kiếm cục bộ (Local Search)
 ### Hill Climbing
 Thuật toán leo đồi (Hill Climbing) là thuật toán tìm kiếm thuộc nhóm tìm kiếm cục bộ (local search) lấy cảm hứng từ việc leo lên đỉnh núi. Trong đó, mục tiêu là tìm ra giải pháp tốt nhất từ ​​một tập hợp các giải pháp khả thi nên thường được sử dụng để giải các bài toán tối ưu hóa. Thuật toán hoạt động bằng cách bắt đầu từ một trạng thái ban đầu và liên tục di chuyển đến trạng thái lân cận tốt hơn (theo một hàm đánh giá) cho đến khi không còn trạng thái lân cận nào tốt hơn hoặc đạt được mục tiêu.
+
 #### Simple Hill Climbing
 Simple hill Climbing (Leo đồi đơn giản) là cách đơn giản nhất để triển khai thuật toán leo đồi , thuật toán chỉ kiểm tra từng trạng thái lận cận của nó và nếu nó tìm thấy trạng thái tốt hơn trạng thái hiện tại thì di chuyển.
 
+
+https://github.com/user-attachments/assets/78603334-dfc8-49c0-acfc-7cdabba87d6b
+
+Simple Hill Climbing: Luôn chọn bước tiếp theo tốt hơn hiện tại. Dễ bị kẹt ở đỉnh cục bộ, không đảm bảo tìm được lời giải tối ưu.
 #### Steepest-Ascent Hill Climbing
 Steepest-Ascent hill climbing (Leo đồi dốc nhất) Là một biến thể của thuật toán leo đồi đơn giản. Thuật toán này kiểm tra tất cả các nút lân cận của trạng thái hiện tại và chọn một nút lân cận gần nhất với trạng thái mục tiêu.
 
+
+https://github.com/user-attachments/assets/e2a2c3bd-42f3-4f7f-a434-c7269637d813
+Steepest-Ascent Hill Climbing: Xét tất cả lân cận và chọn bước cải thiện tốt nhất. Giảm xác suất kẹt tại điểm xấu, nhưng vẫn không thoát được các đỉnh cục bộ.
+
 #### Stochastic Hill Climbing
 Stochastic hill Climbing (Leo đồi ngẫu nhiên) Là một biến thể của thuật toán leo đồi đơn giản. Thay vì tìm ra hàng xóm tốt nhất, phiên bản này lựa chọn ngẫu nhiên một hàng xóm. Nếu hàng xóm đó tốt hơn trạng thái hiện thời, hàng xóm đó sẽ được chọn làm trạng thái hiện thời và thuật toán lặp lại. Ngược lại, nếu hàng xóm được chọn không tốt hơn, thuật toán sẽ chọn ngẫu nhiên một hàng xóm khác và so sánh. Thuật toán kết thúc và trả lại trạng thái hiện thời khi đã hết “kiên nhẫn”. 
+
+
+Stochastic Hill Climbing: Chọn ngẫu nhiên một bước cải thiện trong số các bước tốt hơn hiện tại. Tăng tính đa dạng, có thể thoát khỏi bẫy cục bộ.
+
+
 #### Simulated Annealing 
 Simulated Annealing là thuật toán cục bộ cho phép chọn trạng thái "xấu hơn" với một xác suất giảm dần theo thời gian. Cách làm này giúp thoát khỏi cực trị cục bộ và tăng khả năng tìm được lời giải tốt hơn về lâu dài.
+
+
+https://github.com/user-attachments/assets/bfe61243-5167-48ea-b391-3438abab482a
+
+
+Simulated Annealing: Cho phép chấp nhận bước tồi với xác suất giảm dần theo thời gian. Hiệu quả trong việc tránh đỉnh cục bộ, nhưng cần điều chỉnh tham số nhiệt độ hợp lý.
 #### Genetic Algorithms – Thuật toán di truyền
 Thuật toán di truyền (Genetic Algorithm - GA) là một phương pháp tìm kiếm theo cơ chế tự nhiên của quá trình tiến hóa, bao gồm các bước chọn lọc, lai ghép và đột biến để tìm ra lời giải tối ưu. Trong trò chơi đua cá, thuật toán này có thể dùng để tìm ra chiến lược tối ưu cho việc di chuyển, dựa trên các cá thể khác nhau và cải thiện qua các thế hệ.
 
+Beam Search: Duy trì k trạng thái tốt nhất tại mỗi bước. Tối ưu bộ nhớ hơn BFS, nhưng có thể bỏ sót lời giải tối ưu nếu k quá nhỏ.
 #### Beam Search 
 Beam Search là một dạng tìm kiếm có giới hạn, chỉ giữ lại k trạng thái tốt nhất tại mỗi bước mở rộng. Nó tiết kiệm bộ nhớ và thời gian nhưng có thể bỏ lỡ lời giải tối ưu nếu k quá nhỏ.
+
+Genetic Algorithm: Mô phỏng quá trình tiến hóa tự nhiên bằng chọn lọc, lai ghép, đột biến. Phù hợp với không gian tìm kiếm lớn, nhưng độ chính xác phụ thuộc vào thiết kế bộ gen và hàm đánh giá.
 ### 2.4. Nhóm 4: Tìm kiếm trong môi trường phức tạp
 #### Tree Search AND–OR
 AND-OR Search là một thuật toán tìm kiếm trong không gian trạng thái phức tạp, nơi các hành động cần phải kết hợp với nhau để đạt được mục tiêu. Thuật toán này phân chia bài toán thành các nhánh AND (cần thỏa mãn tất cả các điều kiện) và OR (chỉ cần thỏa mãn một trong các điều kiện). Đây là một phương pháp phù hợp cho những bài toán có sự phụ thuộc lẫn nhau giữa các hành động.
