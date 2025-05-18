@@ -34,7 +34,7 @@ loại bỏ trùng lặp (như tìm kiếm cây)
 
 https://github.com/user-attachments/assets/3086be3e-0090-4a76-8055-e3eae0673b1b
 
-
+Thuật toán BFS tìm được lời giải tối ưu nếu chi phí đồng đều, nhưng tốn nhiều bộ nhớ. Không phù hợp với không gian trạng thái lớn.
 
 
 #### Depth-First Search (DFS) – Tìm kiếm theo chiều sâu
@@ -48,7 +48,7 @@ UCS là một thuật toán tìm kiếm không có thông tin (Uninformed search
 
 https://github.com/user-attachments/assets/8659a05d-3f4e-45de-ba8b-3048bc561b7f
 
-
+UCS: Tìm được lời giải tối ưu, thích hợp cho bài toán có chi phí không đồng đều, nhưng chậm hơn BFS trong một số trường hợp.
 
 #### Iterative Deepening DFS (IDS) – Tìm kiếm chiều sâu lặp
 
@@ -56,7 +56,7 @@ https://github.com/user-attachments/assets/8659a05d-3f4e-45de-ba8b-3048bc561b7f
 https://github.com/user-attachments/assets/ef7222f1-4f82-4de2-a28c-f8be587a6eb3
 
 
-
+Thuật toán IDS Kết hợp ưu điểm của BFS và DFS, đảm bảo tìm lời giải nếu có, ít tốn bộ nhớ hơn BFS, nhưng thời gian tăng do lặp lại.
 
 ### 2.2. Nhóm 2: Thuật toán có thông tin (Informed / Heuristic Search)
 - Greedy Search – Tìm kiếm tham lam
