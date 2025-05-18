@@ -42,7 +42,14 @@ Tìm kiếm theo chiều sâu (DFS) mở rộng các nút theo thứ tự nút s
 
 
 
-Uploading DFS.mp4…
+
+
+https://github.com/user-attachments/assets/cabfaa8d-30b3-4d63-81a0-5c704fd08fa4
+
+
+
+
+Thuật toán DFS(Depth-First Search): Đi càng sâu càng tốt trước khi quay lại. Ít tốn bộ nhớ nhưng có thể rơi vào vòng lặp vô hạn hoặc lời giải không tối ưu.
 
 
 #### Uniform Cost Search (UCS) – Tìm kiếm theo chi phí thống nhất
@@ -56,6 +63,7 @@ UCS: Tìm được lời giải tối ưu, thích hợp cho bài toán có chi p
 
 #### Iterative Deepening DFS (IDS) – Tìm kiếm chiều sâu lặp
 
+IDS là sự kết hợp giữa DFS và BFS. Thuật toán thực hiện DFS giới hạn độ sâu, sau đó tăng dần giới hạn này. IDS có ưu điểm là đảm bảo tìm được lời giải tối ưu giống BFS, nhưng sử dụng ít bộ nhớ như DFS. Đây là một lựa chọn tốt cho bài toán với không gian tìm kiếm lớn.
 
 https://github.com/user-attachments/assets/ef7222f1-4f82-4de2-a28c-f8be587a6eb3
 
@@ -63,31 +71,124 @@ https://github.com/user-attachments/assets/ef7222f1-4f82-4de2-a28c-f8be587a6eb3
 Thuật toán IDS Kết hợp ưu điểm của BFS và DFS, đảm bảo tìm lời giải nếu có, ít tốn bộ nhớ hơn BFS, nhưng thời gian tăng do lặp lại.
 
 ### 2.2. Nhóm 2: Thuật toán có thông tin (Informed / Heuristic Search)
-- Greedy Search – Tìm kiếm tham lam
-- A* – Tìm kiếm A sao
-- Iterative Deepening A* (IDA*) – Tìm kiếm A sao theo chiều sâu lặp
+#### Greedy Search – Tìm kiếm tham lam
+Greedy Search là một thuật toán tìm kiếm có thông tin sử dụng hàm heuristic để đánh giá trạng thái nào có vẻ gần đích nhất và mở rộng nó trước. Tuy nhanh và tiết kiệm tài nguyên, thuật toán không đảm bảo tìm được lời giải tối ưu nếu heuristic không tốt, và có thể bị mắc kẹt tại các điểm cục bộ.
+
+
+https://github.com/user-attachments/assets/73eac389-cc01-4a1b-9e28-e774ed624d92
+
+Greedy Search: Nhanh nhưng không đảm bảo tìm lời giải tối ưu. Phụ thuộc vào hàm heuristic.
+
+#### Thuật toán tìm kiếm A* 
+A* là một thuật toán tìm kiếm có thông tin, cân bằng giữa chi phí và heuristic: chi phí thực tế từ gốc đến nút hiện tại (g(n)) và chi phí ước lượng từ nút đó đến đích (h(n)). A* tìm được lời giải tối ưu nếu hàm heuristic là chấp nhận được (admissible).
+
+
+https://github.com/user-attachments/assets/7e18126b-b77a-483e-9708-af33d1cad8e0
+
+A*: Cân bằng giữa chi phí và heuristic, tìm lời giải tối ưu nếu hàm heuristic là chấp nhận được (admissible).
+#### Thuật toán tìm kiếm IDA* 
+Kết hợp giữa A* và IDS, tiết kiệm bộ nhớ, nhưng thời gian có thể lớn hơn A*. Thuật toán thực hiện tìm kiếm theo chiều sâu có giới hạn chi phí (f-limit), lặp đi lặp lại với ngưỡng tăng dần. Nhờ vậy, IDA* có thể giải các bài toán lớn mà A* không đủ bộ nhớ để xử lý.
+
+
+
+https://github.com/user-attachments/assets/317fdd2c-658b-4dc6-bcdc-124057c23b66
+
+
+
+
+IDA*: Kết hợp giữa A* và IDS, tiết kiệm bộ nhớ, nhưng thời gian có thể lớn hơn A*.
 
 ### 2.3. Nhóm 3: Tìm kiếm cục bộ (Local Search)
-- Hill Climbing
-  - Simple Hill Climbing
-  - Steepest-Ascent Hill Climbing
-  - Stochastic Hill Climbing
-- Simulated Annealing – Ủ mô phỏng
-- Genetic Algorithms – Thuật toán di truyền
-- Beam Search – Tìm kiếm chùm tia
+### Hill Climbing
+Thuật toán leo đồi (Hill Climbing) là thuật toán tìm kiếm thuộc nhóm tìm kiếm cục bộ (local search) lấy cảm hứng từ việc leo lên đỉnh núi. Trong đó, mục tiêu là tìm ra giải pháp tốt nhất từ ​​một tập hợp các giải pháp khả thi nên thường được sử dụng để giải các bài toán tối ưu hóa. Thuật toán hoạt động bằng cách bắt đầu từ một trạng thái ban đầu và liên tục di chuyển đến trạng thái lân cận tốt hơn (theo một hàm đánh giá) cho đến khi không còn trạng thái lân cận nào tốt hơn hoặc đạt được mục tiêu.
 
+#### Simple Hill Climbing
+Simple hill Climbing (Leo đồi đơn giản) là cách đơn giản nhất để triển khai thuật toán leo đồi , thuật toán chỉ kiểm tra từng trạng thái lận cận của nó và nếu nó tìm thấy trạng thái tốt hơn trạng thái hiện tại thì di chuyển.
+
+
+https://github.com/user-attachments/assets/78603334-dfc8-49c0-acfc-7cdabba87d6b
+
+Simple Hill Climbing: Luôn chọn bước tiếp theo tốt hơn hiện tại. Dễ bị kẹt ở đỉnh cục bộ, không đảm bảo tìm được lời giải tối ưu.
+#### Steepest-Ascent Hill Climbing
+Steepest-Ascent hill climbing (Leo đồi dốc nhất) Là một biến thể của thuật toán leo đồi đơn giản. Thuật toán này kiểm tra tất cả các nút lân cận của trạng thái hiện tại và chọn một nút lân cận gần nhất với trạng thái mục tiêu.
+
+
+https://github.com/user-attachments/assets/e2a2c3bd-42f3-4f7f-a434-c7269637d813
+
+Steepest-Ascent Hill Climbing: Xét tất cả lân cận và chọn bước cải thiện tốt nhất. Giảm xác suất kẹt tại điểm xấu, nhưng vẫn không thoát được các đỉnh cục bộ.
+
+#### Stochastic Hill Climbing
+Stochastic hill Climbing (Leo đồi ngẫu nhiên) Là một biến thể của thuật toán leo đồi đơn giản. Thay vì tìm ra hàng xóm tốt nhất, phiên bản này lựa chọn ngẫu nhiên một hàng xóm. Nếu hàng xóm đó tốt hơn trạng thái hiện thời, hàng xóm đó sẽ được chọn làm trạng thái hiện thời và thuật toán lặp lại. Ngược lại, nếu hàng xóm được chọn không tốt hơn, thuật toán sẽ chọn ngẫu nhiên một hàng xóm khác và so sánh. Thuật toán kết thúc và trả lại trạng thái hiện thời khi đã hết “kiên nhẫn”. 
+
+
+Stochastic Hill Climbing: Chọn ngẫu nhiên một bước cải thiện trong số các bước tốt hơn hiện tại. Tăng tính đa dạng, có thể thoát khỏi bẫy cục bộ.
+
+
+#### Simulated Annealing 
+Simulated Annealing là thuật toán cục bộ cho phép chọn trạng thái "xấu hơn" với một xác suất giảm dần theo thời gian. Cách làm này giúp thoát khỏi cực trị cục bộ và tăng khả năng tìm được lời giải tốt hơn về lâu dài.
+
+
+
+
+
+https://github.com/user-attachments/assets/d457518e-f22b-4353-9f7c-857e44fbe2b2
+
+
+
+
+
+
+Simulated Annealing: Cho phép chấp nhận trạng thái xấu hơn với xác suất giảm dần theo thời gian. Hiệu quả trong việc tránh đỉnh cục bộ, nhưng cần điều chỉnh tham số nhiệt độ hợp lý.
+#### Genetic Algorithms – Thuật toán di truyền
+Thuật toán di truyền (Genetic Algorithm - GA) là một phương pháp tìm kiếm theo cơ chế tự nhiên của quá trình tiến hóa, bao gồm các bước chọn lọc, lai ghép và đột biến để tìm ra lời giải tối ưu. Trong trò chơi đua cá, thuật toán này có thể dùng để tìm ra chiến lược tối ưu cho việc di chuyển, dựa trên các cá thể khác nhau và cải thiện qua các thế hệ.
+
+Genetic Algorithm: Mô phỏng quá trình tiến hóa tự nhiên bằng chọn lọc, lai ghép, đột biến. Phù hợp với không gian tìm kiếm lớn, nhưng độ chính xác phụ thuộc vào thiết kế bộ gen và hàm đánh giá.
+
+#### Beam Search 
+Beam Search là một dạng tìm kiếm có giới hạn, chỉ giữ lại k trạng thái tốt nhất tại mỗi bước mở rộng. Nó tiết kiệm bộ nhớ và thời gian nhưng có thể bỏ lỡ lời giải tối ưu nếu k quá nhỏ.
+
+
+https://github.com/user-attachments/assets/ebc5e539-290c-459d-bff0-5212d1cb3563
+
+
+Beam Search: Duy trì k trạng thái tốt nhất tại mỗi bước. Tối ưu bộ nhớ hơn BFS, nhưng có thể bỏ sót lời giải tối ưu nếu k quá nhỏ.
 ### 2.4. Nhóm 4: Tìm kiếm trong môi trường phức tạp
-- Tree Search AND–OR
-- Partially Observable Search – Quan sát một phần
-- Unknown or Dynamic Environment – Môi trường động hoặc không biết trước
+#### Tree Search AND–OR
+AND-OR Search là một thuật toán tìm kiếm trong không gian trạng thái phức tạp, nơi các hành động cần phải kết hợp với nhau để đạt được mục tiêu. Thuật toán này phân chia bài toán thành các nhánh AND (cần thỏa mãn tất cả các điều kiện) và OR (chỉ cần thỏa mãn một trong các điều kiện). Đây là một phương pháp phù hợp cho những bài toán có sự phụ thuộc lẫn nhau giữa các hành động.
+
+
+https://github.com/user-attachments/assets/d408e455-1098-4c27-a325-a093e1865d96
+
+
+#### Partially Observable Search – Quan sát một phần
+Tìm kiếm trong môi trường mà chỉ thấy được một phần, không phải lúc nào cũng biết chính xác trạng thái hiện tại. Cần dùng tập hợp các trạng thái có thể xảy ra (belief states) và cập nhật dần theo quan sát. Ở thuật toán này, phần không nhìn thấy được đánh dấu là -1.
+
+
+https://github.com/user-attachments/assets/4bdbac2e-8222-4553-acc4-a9b25e9b3f92
+
+
+####  Searching with No Observation – Tìm kiếm không quan sát
+Tìm kiếm không quan sát (Searching with No Observation) là một dạng tìm kiếm trong môi trường hoàn toàn không có khả năng quan sát trạng thái hiện tại hoặc kết quả của hành động. Agent (tác nhân) phải đưa ra kế hoạch hành động dựa vào kiến thức ban đầu mà không có bất kỳ thông tin cập nhật nào trong suốt quá trình thực hiện.
+
+
+https://github.com/user-attachments/assets/d665c079-c641-4e09-b58f-3f6fce2f554e
+
 
 ### 2.5. Nhóm 5: Tìm kiếm có ràng buộc (Constraint Satisfaction)
-- Backtracking Search
-- Forward Checking
-- AC-3 – Thuật toán kiểm tra tính nhất quán
+#### Backtracking Search
+Backtracking là thuật toán tìm kiếm trong môi trường có ràng buộc, phương pháp tìm kiếm dựa trên việc thử và sai (trial-and-error). Khi gặp một ngõ cụt (Không thỏa các ràng buộc), thuật toán sẽ quay lại bước trước đó để thử lựa chọn khác. Backtracking được sử dụng chủ yếu trong các bài toán tổ hợp và tối ưu.
+
+#### Test-Based Search- Kiểm thử
+Kiểm thử là thuật toán tìm kiếm có ràng buộc (Constraint Satisfaction). Thuật toán hoạt động bằng cách tạo ra toàn bộ các tổ hợp giá trị có thể cho các biến, sau đó kiểm tra từng tổ hợp để xem có thoả mãn tất cả ràng buộc không.
+#### AC-3 
+AC-3 là một thuật toán trong nhóm tìm kiếm có ràng buộc (Constraint Satisfaction) dùng để kiểm tra và duy trì tính nhất quán cung (arc-consistency) giữa các biến có ràng buộc nhị phân. Thuật toán này hoạt động bằng cách lặp lại việc loại bỏ các giá trị không hợp lệ khỏi miền giá trị của các biến, cho đến khi không còn thay đổi nào nữa.
 
 ### 2.6. Nhóm 6: Học tăng cường (Reinforcement Learning)
-- Q-Learning
+#### Q-Learning
+Q-Learning là một thuật toán học máy thuộc nhánh học tăng cường (reinforcement learning), trong đó một tác nhân học cách tối ưu hóa hành động của mình thông qua việc nhận phản hồi (thưởng hoặc phạt) từ môi trường. 
+
+
+
 
 # 3. Kết luận
 Qua việc áp dụng các thuật toán tìm kiếm vào bài toán 8-Puzzle, em rút ra được một số kết luận như sau:
