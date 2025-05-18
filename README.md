@@ -1,5 +1,11 @@
 # PhamPhuVinh_21110941_BaiTapCaNhan_TriTueNhanTao
-Bài tập cá nhân môn Trí Tuệ Nhân Tạo
+
+# Bài Tập Cá Nhân Trí Tuệ Nhân Tạo – 8-Puzzle
+**Sinh viên**: Phạm Phú Vinh  
+**MSSV**: 21110941  
+**Môn học**: Trí Tuệ Nhân Tạo  
+**Đề tài**: Áp dụng các thuật toán tìm kiếm để giải bài toán 8-Puzzle
+
 ## 1. Mục tiêu:
 - Áp dụng các thuật toán tìm kiếm khác nhau để giải quyết bài toán 8-Puzzle 
 - Hiểu được nguyên lý, điểm mạnh, điểm yếu của từng thuật toán, nhóm thuật toán
