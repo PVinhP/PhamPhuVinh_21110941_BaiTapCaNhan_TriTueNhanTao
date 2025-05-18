@@ -90,7 +90,11 @@ A*: Cân bằng giữa chi phí và heuristic, tìm lời giải tối ưu nếu
 Kết hợp giữa A* và IDS, tiết kiệm bộ nhớ, nhưng thời gian có thể lớn hơn A*. Thuật toán thực hiện tìm kiếm theo chiều sâu có giới hạn chi phí (f-limit), lặp đi lặp lại với ngưỡng tăng dần. Nhờ vậy, IDA* có thể giải các bài toán lớn mà A* không đủ bộ nhớ để xử lý.
 
 
-https://github.com/user-attachments/assets/f4d5a574-8a56-43ae-9ead-9789cdbdec60
+
+https://github.com/user-attachments/assets/317fdd2c-658b-4dc6-bcdc-124057c23b66
+
+
+
 
 IDA*: Kết hợp giữa A* và IDS, tiết kiệm bộ nhớ, nhưng thời gian có thể lớn hơn A*.
 
