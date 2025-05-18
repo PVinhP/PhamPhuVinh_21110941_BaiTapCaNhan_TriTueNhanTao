@@ -42,7 +42,10 @@ Tìm kiếm theo chiều sâu (DFS) mở rộng các nút theo thứ tự nút s
 
 
 
-Uploading DFS.mp4…
+https://github.com/user-attachments/assets/235d77dc-5ff7-4350-83b1-f0036f9c59e7
+
+
+
 
 
 #### Uniform Cost Search (UCS) – Tìm kiếm theo chi phí thống nhất
@@ -56,16 +59,21 @@ UCS: Tìm được lời giải tối ưu, thích hợp cho bài toán có chi p
 
 #### Iterative Deepening DFS (IDS) – Tìm kiếm chiều sâu lặp
 
-
+IDS là sự kết hợp giữa DFS và BFS. Thuật toán thực hiện DFS giới hạn độ sâu, sau đó tăng dần giới hạn này. IDS có ưu điểm là đảm bảo tìm được lời giải tối ưu giống BFS, nhưng sử dụng ít bộ nhớ như DFS. Đây là một lựa chọn tốt cho bài toán với không gian tìm kiếm lớn.
 https://github.com/user-attachments/assets/ef7222f1-4f82-4de2-a28c-f8be587a6eb3
 
 
 Thuật toán IDS Kết hợp ưu điểm của BFS và DFS, đảm bảo tìm lời giải nếu có, ít tốn bộ nhớ hơn BFS, nhưng thời gian tăng do lặp lại.
 
 ### 2.2. Nhóm 2: Thuật toán có thông tin (Informed / Heuristic Search)
-- Greedy Search – Tìm kiếm tham lam
-- A* – Tìm kiếm A sao
-- Iterative Deepening A* (IDA*) – Tìm kiếm A sao theo chiều sâu lặp
+#### Greedy Search – Tìm kiếm tham lam
+Greedy Search là một thuật toán tìm kiếm có thông tin sử dụng hàm heuristic để đánh giá trạng thái nào có vẻ gần đích nhất và mở rộng nó trước. Tuy nhanh và tiết kiệm tài nguyên, thuật toán không đảm bảo tìm được lời giải tối ưu nếu heuristic không tốt, và có thể bị mắc kẹt tại các điểm cục bộ.
+
+#### Thuật toán tìm kiếm A* 
+A* là một thuật toán tìm kiếm có thông tin, cân bằng giữa chi phí và heuristic: chi phí thực tế từ gốc đến nút hiện tại (g(n)) và chi phí ước lượng từ nút đó đến đích (h(n)). A* tìm được lời giải tối ưu nếu hàm heuristic là chấp nhận được (admissible).
+
+#### Thuật toán tìm kiếm IDA* 
+Kết hợp giữa A* và IDS, tiết kiệm bộ nhớ, nhưng thời gian có thể lớn hơn A*. Thuật toán thực hiện tìm kiếm theo chiều sâu có giới hạn chi phí (f-limit), lặp đi lặp lại với ngưỡng tăng dần. Nhờ vậy, IDA* có thể giải các bài toán lớn mà A* không đủ bộ nhớ để xử lý.
 
 ### 2.3. Nhóm 3: Tìm kiếm cục bộ (Local Search)
 - Hill Climbing
