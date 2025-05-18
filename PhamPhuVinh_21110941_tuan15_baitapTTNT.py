@@ -1727,7 +1727,7 @@ class EightPuzzle:
         )
         
         # Tăng số lượng episodes và steps
-        max_episodes = 10000  # Tăng số lượng episodes
+        max_episodes = 1000  # Tăng số lượng episodes
         max_steps_per_episode = 200  # Tăng số bước mỗi episode
         
         # Lưu trữ đường đi giải quyết
