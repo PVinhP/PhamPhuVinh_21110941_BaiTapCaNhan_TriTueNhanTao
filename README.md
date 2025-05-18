@@ -84,3 +84,16 @@ Thuật toán IDS Kết hợp ưu điểm của BFS và DFS, đảm bảo tìm l
 
 ### 2.6. Nhóm 6: Học tăng cường (Reinforcement Learning)
 - Q-Learning
+
+# Kết luận
+Qua việc áp dụng các thuật toán tìm kiếm vào bài toán 8-Puzzle, em rút ra được một số kết luận như sau:
+
+Không có thuật toán nào là tốt nhất trong mọi trường hợp. Mỗi thuật toán có ưu và nhược điểm riêng.
+
+Các thuật toán có thông tin (như A*) thường cho kết quả tối ưu và nhanh hơn, nếu thiết kế được hàm heuristic tốt.
+
+Các thuật toán không có thông tin phù hợp cho việc minh họa nguyên lý tìm kiếm, nhưng kém hiệu quả hơn khi không gian trạng thái lớn.
+
+Thuật toán cục bộ và học tăng cường thể hiện tiềm năng trong các bài toán mở rộng, cần tinh chỉnh tham số để đạt hiệu quả.
+
+Việc so sánh giúp em hiểu rõ hơn về cách lựa chọn thuật toán phù hợp trong các bài toán cụ thể và đánh giá hiệu suất của từng giải pháp một cách có hệ thống.
