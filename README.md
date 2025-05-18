@@ -34,6 +34,8 @@ loại bỏ trùng lặp (như tìm kiếm cây)
 
 https://github.com/user-attachments/assets/3086be3e-0090-4a76-8055-e3eae0673b1b
 
+
+note: dùng ảnh gif thay cho video sẽ rất mờ khó quan sát
 Thuật toán BFS tìm được lời giải tối ưu nếu chi phí đồng đều, nhưng tốn nhiều bộ nhớ. Không phù hợp với không gian trạng thái lớn.
 
 
