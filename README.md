@@ -178,14 +178,32 @@ https://github.com/user-attachments/assets/d665c079-c641-4e09-b58f-3f6fce2f554e
 #### Backtracking Search
 Backtracking là thuật toán tìm kiếm trong môi trường có ràng buộc, phương pháp tìm kiếm dựa trên việc thử và sai (trial-and-error). Khi gặp một ngõ cụt (Không thỏa các ràng buộc), thuật toán sẽ quay lại bước trước đó để thử lựa chọn khác. Backtracking được sử dụng chủ yếu trong các bài toán tổ hợp và tối ưu.
 
+
+
+https://github.com/user-attachments/assets/4e10c11e-a455-41a8-b830-bb22354ee458
+
+
 #### Test-Based Search- Kiểm thử
 Kiểm thử là thuật toán tìm kiếm có ràng buộc (Constraint Satisfaction). Thuật toán hoạt động bằng cách tạo ra toàn bộ các tổ hợp giá trị có thể cho các biến, sau đó kiểm tra từng tổ hợp để xem có thoả mãn tất cả ràng buộc không.
+
+
+https://github.com/user-attachments/assets/73bbbb49-ed41-4bc9-889e-c632ccd14bf7
+
+
 #### AC-3 
 AC-3 là một thuật toán trong nhóm tìm kiếm có ràng buộc (Constraint Satisfaction) dùng để kiểm tra và duy trì tính nhất quán cung (arc-consistency) giữa các biến có ràng buộc nhị phân. Thuật toán này hoạt động bằng cách lặp lại việc loại bỏ các giá trị không hợp lệ khỏi miền giá trị của các biến, cho đến khi không còn thay đổi nào nữa.
+
+
+https://github.com/user-attachments/assets/d43a614d-bc33-4f04-8577-4d4e4d6010a9
+
 
 ### 2.6. Nhóm 6: Học tăng cường (Reinforcement Learning)
 #### Q-Learning
 Q-Learning là một thuật toán học máy thuộc nhánh học tăng cường (reinforcement learning), trong đó một tác nhân học cách tối ưu hóa hành động của mình thông qua việc nhận phản hồi (thưởng hoặc phạt) từ môi trường. 
+
+
+
+https://github.com/user-attachments/assets/2a65fc71-7a66-4824-b55d-7a12428727d0
 
 
 
