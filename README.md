@@ -45,7 +45,7 @@ Tìm kiếm theo chiều sâu (DFS) mở rộng các nút theo thứ tự nút s
 https://github.com/user-attachments/assets/235d77dc-5ff7-4350-83b1-f0036f9c59e7
 
 
-
+Thuật toán DFS(Depth-First Search): Đi càng sâu càng tốt trước khi quay lại. Ít tốn bộ nhớ nhưng có thể rơi vào vòng lặp vô hạn hoặc lời giải không tối ưu.
 
 
 #### Uniform Cost Search (UCS) – Tìm kiếm theo chi phí thống nhất
@@ -69,11 +69,25 @@ Thuật toán IDS Kết hợp ưu điểm của BFS và DFS, đảm bảo tìm l
 #### Greedy Search – Tìm kiếm tham lam
 Greedy Search là một thuật toán tìm kiếm có thông tin sử dụng hàm heuristic để đánh giá trạng thái nào có vẻ gần đích nhất và mở rộng nó trước. Tuy nhanh và tiết kiệm tài nguyên, thuật toán không đảm bảo tìm được lời giải tối ưu nếu heuristic không tốt, và có thể bị mắc kẹt tại các điểm cục bộ.
 
+
+https://github.com/user-attachments/assets/73eac389-cc01-4a1b-9e28-e774ed624d92
+
+Greedy Search: Nhanh nhưng không đảm bảo tìm lời giải tối ưu. Phụ thuộc vào hàm heuristic.
+
 #### Thuật toán tìm kiếm A* 
 A* là một thuật toán tìm kiếm có thông tin, cân bằng giữa chi phí và heuristic: chi phí thực tế từ gốc đến nút hiện tại (g(n)) và chi phí ước lượng từ nút đó đến đích (h(n)). A* tìm được lời giải tối ưu nếu hàm heuristic là chấp nhận được (admissible).
 
+
+https://github.com/user-attachments/assets/7e18126b-b77a-483e-9708-af33d1cad8e0
+
+A*: Cân bằng giữa chi phí và heuristic, tìm lời giải tối ưu nếu hàm heuristic là chấp nhận được (admissible).
 #### Thuật toán tìm kiếm IDA* 
 Kết hợp giữa A* và IDS, tiết kiệm bộ nhớ, nhưng thời gian có thể lớn hơn A*. Thuật toán thực hiện tìm kiếm theo chiều sâu có giới hạn chi phí (f-limit), lặp đi lặp lại với ngưỡng tăng dần. Nhờ vậy, IDA* có thể giải các bài toán lớn mà A* không đủ bộ nhớ để xử lý.
+
+
+https://github.com/user-attachments/assets/f4d5a574-8a56-43ae-9ead-9789cdbdec60
+
+IDA*: Kết hợp giữa A* và IDS, tiết kiệm bộ nhớ, nhưng thời gian có thể lớn hơn A*.
 
 ### 2.3. Nhóm 3: Tìm kiếm cục bộ (Local Search)
 - Hill Climbing
