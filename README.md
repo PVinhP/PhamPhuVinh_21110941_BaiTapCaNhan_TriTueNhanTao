@@ -31,7 +31,7 @@ loại bỏ trùng lặp (như tìm kiếm cây)
 - BFS-Graph: Tìm kiếm theo chiều rộng có loại bỏ trùng lặp (như tìm kiếm đồ thị)
 
 
-
+<img src="C:\Users\Admin\Downloads\Tri_tue_nhan_tao\a\BFS.gif" width="500"/>
 
 
 #### Depth-First Search (DFS) – Tìm kiếm theo chiều sâu
