@@ -45,6 +45,12 @@ UCS là một thuật toán tìm kiếm không có thông tin (Uninformed search
 #### Iterative Deepening DFS (IDS) – Tìm kiếm chiều sâu lặp
 ![IDS](https://github.com/user-attachments/assets/a6c8ce8d-07a4-4190-abb1-bb4ad18ad4e4)
 
+
+https://github.com/user-attachments/assets/ef7222f1-4f82-4de2-a28c-f8be587a6eb3
+
+
+
+
 ### 2.2. Nhóm 2: Thuật toán có thông tin (Informed / Heuristic Search)
 - Greedy Search – Tìm kiếm tham lam
 - A* – Tìm kiếm A sao
