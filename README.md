@@ -211,8 +211,6 @@ https://github.com/user-attachments/assets/2a65fc71-7a66-4824-b55d-7a12428727d0
 
 
 # 3. Kết luận
-![Figure_1](https://github.com/user-attachments/assets/e79924c9-d875-4d75-ab13-9a6293ccecf5)
-
 
 Qua việc áp dụng các thuật toán tìm kiếm vào bài toán 8-Puzzle, em rút ra được một số kết luận như sau:
 
