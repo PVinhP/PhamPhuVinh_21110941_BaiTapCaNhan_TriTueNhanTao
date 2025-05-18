@@ -31,7 +31,11 @@ loại bỏ trùng lặp (như tìm kiếm cây)
 - BFS-Graph: Tìm kiếm theo chiều rộng có loại bỏ trùng lặp (như tìm kiếm đồ thị)
 
 
-![BFS](https://github.com/user-attachments/assets/048020eb-6858-48ce-9941-4fcb207e4dfd)
+
+https://github.com/user-attachments/assets/3086be3e-0090-4a76-8055-e3eae0673b1b
+
+
+
 
 #### Depth-First Search (DFS) – Tìm kiếm theo chiều sâu
 Tìm kiếm theo chiều sâu (DFS) mở rộng các nút theo thứ tự nút sâu nhất mở rộng trước (LIFO). danh sách mở được triển khai dưới dạng ngăn xếp.
@@ -39,13 +43,15 @@ Tìm kiếm theo chiều sâu (DFS) mở rộng các nút theo thứ tự nút s
 
 #### Uniform Cost Search (UCS) – Tìm kiếm theo chi phí thống nhất
 UCS là một thuật toán tìm kiếm không có thông tin (Uninformed search algorithms) dựa trên chi phí. Thuật toán sẽ tìm đường đi ngắn nhất giữa hai điểm bằng cách mở rộng các trạng thái theo chi phí thấp nhất. UCS luôn ưu tiên các con đường có chi phí thấp nhất để đạt được đích, giúp đảm bảo rằng tìm được con đường tối ưu nhất trong các môi trường có chi phí thay đổi.
-![UCS](https://github.com/user-attachments/assets/e79ac4cb-d9ae-4837-833c-1414649a908a)
+
+
+
+https://github.com/user-attachments/assets/8659a05d-3f4e-45de-ba8b-3048bc561b7f
+
 
 
 #### Iterative Deepening DFS (IDS) – Tìm kiếm chiều sâu lặp
-![IDS](https://github.com/user-attachments/assets/a6c8ce8d-07a4-4190-abb1-bb4ad18ad4e4)
 
-![IDS](https://github.com/user-attachments/assets/50c31514-6522-44d8-88b6-f70bfdccfd92)
 
 https://github.com/user-attachments/assets/ef7222f1-4f82-4de2-a28c-f8be587a6eb3
 
