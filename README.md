@@ -42,7 +42,9 @@ Tìm kiếm theo chiều sâu (DFS) mở rộng các nút theo thứ tự nút s
 
 
 
-https://github.com/user-attachments/assets/235d77dc-5ff7-4350-83b1-f0036f9c59e7
+
+https://github.com/user-attachments/assets/91c4862d-c667-40fb-ae2b-b2ba95725bc6
+
 
 
 Thuật toán DFS(Depth-First Search): Đi càng sâu càng tốt trước khi quay lại. Ít tốn bộ nhớ nhưng có thể rơi vào vòng lặp vô hạn hoặc lời giải không tối ưu.
