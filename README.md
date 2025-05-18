@@ -31,8 +31,7 @@ loại bỏ trùng lặp (như tìm kiếm cây)
 - BFS-Graph: Tìm kiếm theo chiều rộng có loại bỏ trùng lặp (như tìm kiếm đồ thị)
 
 
-<img src="C:\Users\Admin\Downloads\Tri_tue_nhan_tao\a\BFS.gif" width="500"/>
-
+![BFS](https://github.com/user-attachments/assets/048020eb-6858-48ce-9941-4fcb207e4dfd)
 
 #### Depth-First Search (DFS) – Tìm kiếm theo chiều sâu
 - Uniform Cost Search (UCS) – Tìm kiếm theo chi phí thống nhất
