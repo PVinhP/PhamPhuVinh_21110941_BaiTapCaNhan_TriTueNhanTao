@@ -64,7 +64,7 @@ https://github.com/user-attachments/assets/8659a05d-3f4e-45de-ba8b-3048bc561b7f
 
 UCS: Tìm được lời giải tối ưu, thích hợp cho bài toán có chi phí không đồng đều, nhưng chậm hơn BFS trong một số trường hợp.
 
-#### Iterative Deepening DFS (IDS) – Tìm kiếm chiều sâu lặp
+#### Iterative Deepening DFS (IDS)
 
 IDS là sự kết hợp giữa DFS và BFS. Thuật toán thực hiện DFS giới hạn độ sâu, sau đó tăng dần giới hạn này. IDS có ưu điểm là đảm bảo tìm được lời giải tối ưu giống BFS, nhưng sử dụng ít bộ nhớ như DFS. Đây là một lựa chọn tốt cho bài toán với không gian tìm kiếm lớn.
 
