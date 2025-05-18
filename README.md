@@ -2,6 +2,18 @@
 Bài tập cá nhân môn Trí Tuệ Nhân Tạo
 ## 1. Mục tiêu:
 Áp dụng các thuật toán tìm kiếm khác nhau để giải quyết bài toán 8-Puzzle 
+Hiểu được nguyên lý, điểm mạnh, điểm yếu của từng thuật toán, nhóm thuật toán
+So sánh hiệu suất của thuật toán dựa trên:
+- Thời gian thực thi và bộ nhớ sử dụng
+- Độ chính xác (thuật toán có tối ưu hay không)
+- Tính khả thi với bài toán có không gian trạng thái lớn
+Gồm 6 nhóm thuật toán :
+- Tìm kiếm không có thông tin: BFS, DFS, IDS, UCS.
+- Tìm kiếm có thông tin: Greedy Best-First Search, A*, IDA*
+- Tìm kiếm cục bộ: Simple Hill Climbing, Steepest Ascent Hill Climbing, Stochastic Hill Climbing, Beam, Genetic Algorithm
+- Tìm kiếm trong môi trường phức tạp: And-Or Search, Belief, Partially
+- Tìm kiếm trong môi trường ràng buộc: Kiểm thử, Backtracking, AC-3
+- Học tăng cường: Q-Learning
 ## 2. Nội dung:
 ### 2.1. Nhóm 1: Thuật toán không có thông tin (Uninformed Search)
 #### Breadth-First Search (BFS) – Tìm kiếm theo chiều rộng
@@ -11,6 +23,8 @@ không gian trạng thái và là thuật toán tối ưu nếu tất cả các 
 - BFS-Tree: Tìm kiếm theo chiều rộng có thể được thực hiện mà không cần
 loại bỏ trùng lặp (như tìm kiếm cây)
 - BFS-Graph: Tìm kiếm theo chiều rộng có loại bỏ trùng lặp (như tìm kiếm đồ thị)
+
+
 
 
 
