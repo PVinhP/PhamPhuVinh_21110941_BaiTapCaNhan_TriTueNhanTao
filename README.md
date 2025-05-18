@@ -109,6 +109,7 @@ Steepest-Ascent hill climbing (Leo đồi dốc nhất) Là một biến thể c
 
 
 https://github.com/user-attachments/assets/e2a2c3bd-42f3-4f7f-a434-c7269637d813
+
 Steepest-Ascent Hill Climbing: Xét tất cả lân cận và chọn bước cải thiện tốt nhất. Giảm xác suất kẹt tại điểm xấu, nhưng vẫn không thoát được các đỉnh cục bộ.
 
 #### Stochastic Hill Climbing
