@@ -130,20 +130,33 @@ Simulated Annealing: Cho phép chấp nhận trạng thái xấu hơn với xác
 #### Genetic Algorithms – Thuật toán di truyền
 Thuật toán di truyền (Genetic Algorithm - GA) là một phương pháp tìm kiếm theo cơ chế tự nhiên của quá trình tiến hóa, bao gồm các bước chọn lọc, lai ghép và đột biến để tìm ra lời giải tối ưu. Trong trò chơi đua cá, thuật toán này có thể dùng để tìm ra chiến lược tối ưu cho việc di chuyển, dựa trên các cá thể khác nhau và cải thiện qua các thế hệ.
 
-Beam Search: Duy trì k trạng thái tốt nhất tại mỗi bước. Tối ưu bộ nhớ hơn BFS, nhưng có thể bỏ sót lời giải tối ưu nếu k quá nhỏ.
+Genetic Algorithm: Mô phỏng quá trình tiến hóa tự nhiên bằng chọn lọc, lai ghép, đột biến. Phù hợp với không gian tìm kiếm lớn, nhưng độ chính xác phụ thuộc vào thiết kế bộ gen và hàm đánh giá.
+
 #### Beam Search 
 Beam Search là một dạng tìm kiếm có giới hạn, chỉ giữ lại k trạng thái tốt nhất tại mỗi bước mở rộng. Nó tiết kiệm bộ nhớ và thời gian nhưng có thể bỏ lỡ lời giải tối ưu nếu k quá nhỏ.
 
-Genetic Algorithm: Mô phỏng quá trình tiến hóa tự nhiên bằng chọn lọc, lai ghép, đột biến. Phù hợp với không gian tìm kiếm lớn, nhưng độ chính xác phụ thuộc vào thiết kế bộ gen và hàm đánh giá.
+
+https://github.com/user-attachments/assets/ebc5e539-290c-459d-bff0-5212d1cb3563
+
+
+Beam Search: Duy trì k trạng thái tốt nhất tại mỗi bước. Tối ưu bộ nhớ hơn BFS, nhưng có thể bỏ sót lời giải tối ưu nếu k quá nhỏ.
 ### 2.4. Nhóm 4: Tìm kiếm trong môi trường phức tạp
 #### Tree Search AND–OR
 AND-OR Search là một thuật toán tìm kiếm trong không gian trạng thái phức tạp, nơi các hành động cần phải kết hợp với nhau để đạt được mục tiêu. Thuật toán này phân chia bài toán thành các nhánh AND (cần thỏa mãn tất cả các điều kiện) và OR (chỉ cần thỏa mãn một trong các điều kiện). Đây là một phương pháp phù hợp cho những bài toán có sự phụ thuộc lẫn nhau giữa các hành động.
+
+
+https://github.com/user-attachments/assets/d408e455-1098-4c27-a325-a093e1865d96
+
 
 #### Partially Observable Search – Quan sát một phần
 Tìm kiếm trong môi trường mà chỉ thấy được một phần, không phải lúc nào cũng biết chính xác trạng thái hiện tại. Cần dùng tập hợp các trạng thái có thể xảy ra (belief states) và cập nhật dần theo quan sát. Ở thuật toán này, phần không nhìn thấy được đánh dấu là -1.
 
 ####  Searching with No Observation – Tìm kiếm không quan sát
 Tìm kiếm không quan sát (Searching with No Observation) là một dạng tìm kiếm trong môi trường hoàn toàn không có khả năng quan sát trạng thái hiện tại hoặc kết quả của hành động. Agent (tác nhân) phải đưa ra kế hoạch hành động dựa vào kiến thức ban đầu mà không có bất kỳ thông tin cập nhật nào trong suốt quá trình thực hiện.
+
+
+https://github.com/user-attachments/assets/d665c079-c641-4e09-b58f-3f6fce2f554e
+
 
 ### 2.5. Nhóm 5: Tìm kiếm có ràng buộc (Constraint Satisfaction)
 #### Backtracking Search
