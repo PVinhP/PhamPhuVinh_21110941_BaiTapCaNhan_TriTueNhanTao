@@ -145,6 +145,10 @@ Simulated Annealing: Cho phép chấp nhận trạng thái xấu hơn với xác
 #### Genetic Algorithms – Thuật toán di truyền
 Thuật toán di truyền (Genetic Algorithm - GA) là một phương pháp tìm kiếm theo cơ chế tự nhiên của quá trình tiến hóa, bao gồm các bước chọn lọc, lai ghép và đột biến để tìm ra lời giải tối ưu. Trong trò chơi đua cá, thuật toán này có thể dùng để tìm ra chiến lược tối ưu cho việc di chuyển, dựa trên các cá thể khác nhau và cải thiện qua các thế hệ.
 
+
+https://github.com/user-attachments/assets/8206c8b0-bc04-4446-80cd-8be49bfa654f
+
+
 Genetic Algorithm: Mô phỏng quá trình tiến hóa tự nhiên bằng chọn lọc, lai ghép, đột biến. Phù hợp với không gian tìm kiếm lớn, nhưng độ chính xác phụ thuộc vào thiết kế bộ gen và hàm đánh giá.
 
 #### Beam Search 
